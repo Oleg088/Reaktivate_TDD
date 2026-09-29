@@ -1,8 +1,58 @@
+body {
+  font-family: arial, sans-serif;
+  margin: 0;
+}
+
 .App {
-  font-family: arial;
+  font-family: arial, sans-serif;
   text-align: center;
 }
 
-body {
-  font-family: arial;
+.app-header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background: #222;
+  color: #fff;
+  padding: 12px 16px;
+  font-size: 16px;
+}
+
+.app-main {
+  padding: 16px;
+}
+
+.books-filter {
+  margin-bottom: 16px;
+}
+
+.filter-btn {
+  margin: 0 4px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+.filter-btn.active {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.books-list {
+  margin-bottom: 16px;
+}
+
+.books-add {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.books-add input {
+  padding: 6px 8px;
+}
+
+.books-error {
+  margin-top: 12px;
+  color: #b00020;
 }
